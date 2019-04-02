@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 open class DTFont {
-    open class func make(with fontName: String, textStyle style: UIFontTextStyle) -> UIFont {
+    open class func make(with fontName: String, textStyle style: UIFont.TextStyle) -> UIFont {
         
         return UIFont(name: fontName, textStyle: style)
     }

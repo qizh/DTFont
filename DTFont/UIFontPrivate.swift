@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 extension UIFont {
-    convenience init(name fontName: String, textStyle style: UIFontTextStyle) {
+    convenience init(name fontName: String, textStyle style: UIFont.TextStyle) {
         self.init (
             descriptor: UIFontDescriptor.preferredDescriptor (textStyle:style, fontName: fontName),
             size: 0.0
@@ -26,7 +26,7 @@ extension UIFont {
 }
 
 extension UIFontDescriptor {
-    static func preferredDescriptor(textStyle: UIFontTextStyle, fontName: String) -> UIFontDescriptor {
+    static func preferredDescriptor(textStyle: UIFont.TextStyle, fontName: String) -> UIFontDescriptor {
         return UIFontDescriptor(name: fontName, size: UIFont.preferredFont(forTextStyle: textStyle).pointSize)
     }
 }

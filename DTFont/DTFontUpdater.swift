@@ -19,7 +19,7 @@ public final class DTFontUpdater: NSObject {
         NotificationCenter.default.addObserver(
             self,
             selector: #selector(self.receiveNotification(_:)),
-            name: NSNotification.Name.UIContentSizeCategoryDidChange,
+            name: UIContentSizeCategory.didChangeNotification,
             object: nil
         )
     }

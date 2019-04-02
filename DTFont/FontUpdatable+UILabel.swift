@@ -38,7 +38,7 @@ extension FontUpdatable where Self: UILabel {
         self.fontMaker = font
         let updater = DTFontUpdater()
         updater.updateHandler = { _ in
-            DispatchQueue.main.async { [weak self] _ in
+            DispatchQueue.main.async { [weak self] in
                 self?.font = self?.fontMaker?()
             }
         }
